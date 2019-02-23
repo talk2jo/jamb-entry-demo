@@ -5,12 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>myDiary | Entries</title>
+  <title>Jamb | Student entries</title>
   <link rel="stylesheet" href="public/css/sidebar.css" type="text/css" />
   <script src="public/js/font-awesome.js"></script>
 </head>
 
-<body onload="getAllEntry();">
+<body>
   <!-- Vertical sidebar -->
   <div class="sidebar_menu" id="mySidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -41,6 +41,7 @@
       <div class="mobile-nav"><span class="mobile_menu_icon" onclick="openNav()">&#9776;</span></div>
       <nav class="top-menu" id="total-entries">Total entries: 0</nav>
       <h3 id="entry-table-heading">Student's Record</h3>
+      <input type="text" id="mySearch" onkeyup="mySearch()" placeholder="Search for records..">
       <div class="tbl-header">
         <table>
           <thead>
@@ -63,29 +64,29 @@
             <tr>
               <td>1</td>
               <td>1253D3</td>
-              <th>Alibaba Yusuf</th>
-              <th>M</th>
-              <th>Computer Science</th>
-              <th>2017</th>
-              <th>A.B.U</th>
+              <td>Alibaba Yusuf</td>
+              <td>M</td>
+              <td>Computer Science</td>
+              <td>2017</td>
+              <td>A.B.U</td>
             </tr>
             <tr>
               <td>2</td>
               <td>1253E3</td>
-              <th>Amina Khalid</th>
-              <th>F</th>
-              <th>Accounting</th>
-              <th>2018</th>
-              <th>KASU</th>
+              <td>Amina Khalid</td>
+              <td>F</td>
+              <td>Accounting</td>
+              <td>2018</td>
+              <td>KASU</td>
             </tr>
             <tr>
               <td>3</td>
               <td>1253ED</td>
-              <th>Faith John</th>
-              <th>F</th>
-              <th>Accounting</th>
-              <th>2018</th>
-              <th>KASU</th>
+              <td>Faith John</td>
+              <td>F</td>
+              <td>Accounting</td>
+              <td>2018</td>
+              <td>KASU</td>
             </tr>
           </tbody>
         </table>
@@ -100,4 +101,4 @@
 <script src="public/jquery/jquery-2.1.1.min.js"></script>
 <script src="public/js/myDiary.js"></script>
 <script src="public/js/entries.js"></script>
-<script src="public/js/logout.js"></script>
+<script src="public/js/search.js"></script>
