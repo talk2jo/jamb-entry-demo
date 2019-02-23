@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>myDiary | Entries</title>
+  <link rel="stylesheet" href="public/css/sidebar.css" type="text/css" />
+  <script src="public/js/font-awesome.js"></script>
+</head>
+
+<body onload="getAllEntry();">
+  <!-- Vertical sidebar -->
+  <div class="sidebar_menu" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <div class="nav_image">
+      <img src="public/img/Official_JAMB_logo.png" id="passport" class="avater" /><br />
+    </div>
+
+    <ul class="navigation_section">
+      <a href="compose.html">
+        <li class="navigation_item"><i class="fa fa-pen-square navigation_item-i"></i>Compose</li>
+      </a>
+      <a href="entries.html">
+        <li class="navigation_item"><i class="fa fa-heart navigation_item-i"></i>Entries</li>
+      </a>
+      <a href="account.html">
+        <li class="navigation_item"><i class="fa fa-user navigation_item-i"></i>Account</li>
+      </a>
+      <li>
+        <button class="icon-btn" id="logout">
+          <h1 class="boxed_item boxed_item_smaller signup"><i class="fa fa-user"></i> LOGOUT</h1>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <main>
+    <section class="container" id="container">
+      <div class="mobile-nav"><span class="mobile_menu_icon" onclick="openNav()">&#9776;</span></div>
+      <nav class="top-menu" id="total-entries">Total entries: 0</nav>
+      <h3 id="entry-table-heading">Student's Record</h3>
+      <div class="tbl-header">
+        <table>
+          <thead>
+            <tr>
+              <th>S/N</th>
+              <th>Reg-no</th>
+              <th>Fullname</th>
+              <th>Gender</th>
+              <th>Course</th>
+              <th>Year</th>
+              <th>University</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      <div class="tbl-content">
+        <table>
+          <tbody id="tbody">
+            <tr>
+              <td>1</td>
+              <td>1253D3</td>
+              <th>Alibaba Yusuf</th>
+              <th>M</th>
+              <th>Computer Science</th>
+              <th>2017</th>
+              <th>A.B.U</th>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>1253E3</td>
+              <th>Amina Khalid</th>
+              <th>F</th>
+              <th>Accounting</th>
+              <th>2018</th>
+              <th>KASU</th>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>1253ED</td>
+              <th>Faith John</th>
+              <th>F</th>
+              <th>Accounting</th>
+              <th>2018</th>
+              <th>KASU</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
+
+<!-- Jquery library -->
+<script src="public/jquery/jquery-2.1.1.min.js"></script>
+<script src="public/js/myDiary.js"></script>
+<script src="public/js/entries.js"></script>
+<script src="public/js/logout.js"></script>
