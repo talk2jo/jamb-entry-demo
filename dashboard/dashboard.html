@@ -21,7 +21,7 @@
 
     <ul class="navigation_section">
       <a href="compose.html">
-        <li class="navigation_item"><i class="fa fa-pen-square navigation_item-i"></i>Compose</li>
+        <li class="navigation_item"><i class="fa fa-pen-square navigation_item-i"></i>Add Entry</li>
       </a>
       <a href="entries.html">
         <li class="navigation_item"><i class="fa fa-heart navigation_item-i"></i>Entries</li>
@@ -42,7 +42,7 @@
       <nav class="top-menu" id="total-entries">Total entries: 0</nav>
       <h3 id="entry-table-heading">Student's Record</h3>
       <div class="" style="display:inline-block;">
-        <select style="width:200px; margin-left:30px;">
+        <select style="width:200px; margin-left:30px;" id="searchOption">
           <option selected disabled>Search by</option>
           <option>Reg-no</option>
           <option>Year</option>
@@ -62,6 +62,7 @@
               <th>Course</th>
               <th>Year</th>
               <th>University</th>
+              <th>Action</th>
             </tr>
           </thead>
         </table>
@@ -78,6 +79,7 @@
               <td>Computer Science</td>
               <td>2017</td>
               <td>A.B.U</td>
+              <td><button class="icon-btn"><i class="fa fa-eye"></i></button></td>
             </tr>
             <tr>
               <td>2</td>
@@ -87,6 +89,7 @@
               <td>Accounting</td>
               <td>2018</td>
               <td>KASU</td>
+              <td><button class="icon-btn"><i class="fa fa-eye"></i></button></td>
             </tr>
             <tr>
               <td>3</td>
@@ -96,6 +99,7 @@
               <td>Accounting</td>
               <td>2018</td>
               <td>KASU</td>
+              <td><button class="icon-btn"><i class="fa fa-eye"></i></button></td>
             </tr>
           </tbody>
         </table>
