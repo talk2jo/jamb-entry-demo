@@ -41,7 +41,16 @@
       <div class="mobile-nav"><span class="mobile_menu_icon" onclick="openNav()">&#9776;</span></div>
       <nav class="top-menu" id="total-entries">Total entries: 0</nav>
       <h3 id="entry-table-heading">Student's Record</h3>
-      <input type="text" id="mySearch" onkeyup="mySearch()" placeholder="Search for records..">
+      <div class="" style="display:inline-block;">
+        <select style="width:200px; margin-left:30px;">
+          <option selected disabled>Search by</option>
+          <option>Reg-no</option>
+          <option>Year</option>
+          <option>University</option>
+        </select>
+        <input type="text" id="mySearch" onkeyup="mySearch()" placeholder="Search for records by registration no, year or university"
+          style="width:700px;">
+      </div>
       <div class="tbl-header">
         <table>
           <thead>
