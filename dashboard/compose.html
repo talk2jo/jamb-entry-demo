@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Jamb | Compose Entries</title>
+  <link rel="stylesheet" href="public/css/sidebar.css" type="text/css" />
+  <link rel="stylesheet" href="public/css/userFeedback.css" type="text/css" />
+  <script src="public/js/font-awesome.js"></script>
+</head>
+
+<body onload="getUserinfo()">
+  <!-- Vertical sidebar -->
+  <div class="sidebar_menu" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <div class="nav_image">
+      <img src="public/img/Official_JAMB_logo.png" id="passport" class="avater" /><br />
+    </div>
+
+    <ul class="navigation_section">
+      <a href="compose.html">
+        <li class="navigation_item"><i class="fa fa-pen-square navigation_item-i"></i>Add Entry</li>
+      </a>
+      <a href="entries.html">
+        <li class="navigation_item"><i class="fa fa-heart navigation_item-i"></i>Entries</li>
+      </a>
+      <a href="account.html">
+        <li class="navigation_item"><i class="fa fa-user navigation_item-i"></i>Account</li>
+      </a>
+      <li>
+        <button class="icon-btn" id="logout">
+          <h1 class="boxed_item boxed_item_smaller signup"><i class="fa fa-user"></i> LOGOUT</h1>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <main>
+    <section class="container" id="container">
+      <div class="mobile-nav"><span class="mobile_menu_icon" onclick="openNav()">&#9776;</span></div>
+      <nav class="top-menu"><i class="fa fa-plus"></i> New Entry</nav>
+
+      <div class="form-container">
+        <form id="compose">
+          <label for="title">Registration No</label><br />
+          <input type="text" id="title" name="reg-no" placeholder="enter registration no" pattern=".{4,20}" title="Reg-no should be 4 to 20 characters"
+            style="width:45%;" /><br />
+          <label for="fullname">Fullname</label><br />
+          <input type="text" id="title" name="fullname" placeholder="enter fullname" pattern=".{4,30}" title="Fullname should be 4 to 30 characters"
+            style="width:45%;" /><br />
+          <label for="fullname">Gender</label><br />
+          <select style="width:48%;">
+            <option selected disabled>Gender</option>
+            <option>M</option>
+            <option>F</option>
+          </select>
+          <br />
+          <label for="course">Course</label><br />
+          <input type="text" id="course" name="fullname" placeholder="enter course" pattern=".{4,40}" title="Course should be 4 to 40 characters"
+            style="width:45%;" /><br />
+
+          <label for="year">Year</label><br />
+          <input type="text" id="year" name="fullname" placeholder="enter year" pattern="[0-9]{4}" title="Course should be 4 to 40 characters"
+            style="width:45%;" /><br />
+
+          <label for="University">University</label><br />
+          <select style="width:48%;">
+            <option selected disabled>Select University</option>
+            <option>KASU</option>
+            <option>A.B.U</option>
+            <option>UNILAG</option>
+            <option>UNIPORT</option>
+            <option>UNIBEN</option>
+          </select>
+          <br />
+
+          <label for="matric">Matric No</label><br />
+          <input type="text" id="matric" name="fullname" placeholder="enter matric no" pattern=".{4,20}" title="Matric should be 4 to 20 characters"
+            style="width:45%;" /><br />
+
+          <label for="date">Date of birth</label> <br /><input type="date" id="date" name="date" style="width:45%;" /><br
+          />
+          <div class="inline-btn">
+            <input type="submit" value="Update" />
+            <input type="button" class="cancel-btn" value="Cancel" onclick="cancelEdit()" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <div id="myModal" class="loader-box">
+      <div class="info-content">
+        <p><i class="fa fa-check teal"></i> Saved successfully</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
+
+<!-- Jquery library -->
+<script src="public/jquery/jquery-2.1.1.min.js"></script>
+<script src="public/js/myDiary.js"></script>
+<script src="public/js/compose.js"></script>
+<script src="public/js/logout.js"></script>

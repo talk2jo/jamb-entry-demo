@@ -105,7 +105,7 @@ body {
   position: relative;
   margin: 0 0px 0px 250px;
   top: 0;
-  overflow: hidden !important;
+  overflow: auto;
   height: 100vh;
 
   background: -webkit-linear-gradient(left, #25c481, #25b7c4);
